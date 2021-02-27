@@ -18,7 +18,7 @@ body {
     overflow-x: hidden;
     font-family: "Poppins", "Arial", sans-serif;
     font-size: 18px;
-    line-height: 26px;
+    line-height: 1.2;
     font-style: normal;
     font-weight: 500;
     color: #181725;
@@ -40,4 +40,72 @@ hr {
     padding: 0 24px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.root {
+    position: relative;
+}
+
+.welcome {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('./img/nectar-welcome.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.welcome-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.welcome-title {
+    font-weight: 600;
+    font-size: 72px;
+    color: #ffffff;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.welcome-subtitle {
+    margin-top: 0;
+    font-size: 24px;
+    color: rgba(252, 252, 252, 0.7);
+}
+
+.welcome-logo {
+    order: -1;
+    display: block;
+    width: 120px;
+    height: auto;
+}
+
+.btn  {
+    width: 360px;
+    display: block;
+    padding: 25px;
+    border: none;
+    background-color: #53B175;
+    border-radius: 19px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    color: #FFF9FF;
+    text-decoration: none;
+    text-align: center;
+}
+
+.welcome-btn {
+    
 }
